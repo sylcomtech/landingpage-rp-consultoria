@@ -31,10 +31,9 @@ LandingPageRP/
 4. **Por que escolher o Consórcio** — Poder é seu / Economia sem juros / Investimento planejado
 5. **Como funciona** — 4 passos + caixa de dica + CTA "Quero simular"
 6. **Qual será sua próxima conquista?** — cards Imóvel / Veículo / Investimento, cada um com botão "Simule agora"
-7. **Cartas contempladas** — tabela (crédito e parcela) com botão "Tenho interesse" por linha + "Consultar disponibilidade"
-8. **Quem somos e diferencial** — missão + 4 diferenciais
-9. **Regulamentado pelo Banco Central e ABAC**
-10. **Contato** — WhatsApp/telefone, e-mail, endereço, redes sociais e formulário
+7. **Quem somos e diferencial** — missão + 4 diferenciais
+8. **Regulamentado pelo Banco Central e ABAC**
+9. **Contato** — WhatsApp/telefone, e-mail, endereço, redes sociais e formulário
 
 Todos os botões de simulação abrem o **mesmo modal** de captação, já pré-preenchendo o tipo de produto de acordo com o botão clicado.
 
@@ -44,7 +43,6 @@ Busque por `placeholder` no `index.html` e ajuste:
 
 - **Número de WhatsApp**: em `assets/js/main.js`, constante `WHATSAPP_NUMBER` (topo do arquivo) e no link do botão flutuante em `index.html` (`.whatsapp-fab`).
 - **Telefone, e-mail e endereço** na seção de Contato (`#contato`).
-- **Valores da tabela de Cartas Contempladas** (`#contempladas`) — atualmente ilustrativos.
 - **Links de redes sociais** (Instagram, Facebook, LinkedIn) na seção de Contato.
 
 ## 🔌 Como os formulários funcionam

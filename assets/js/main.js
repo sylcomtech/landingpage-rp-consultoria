@@ -195,7 +195,7 @@
      Reveal on scroll
   --------------------------------------------------------- */
   var revealTargets = qsa(
-    ".reason-card, .step-card, .solution-card, .stat-card, .differential, .compliance-badge, .table-wrap"
+    ".reason-card, .step-card, .solution-card, .stat-card, .differential, .compliance-badge"
   );
   revealTargets.forEach(function (el) {
     el.setAttribute("data-reveal", "");
