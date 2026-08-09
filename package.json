@@ -1,0 +1,20 @@
+{
+  "name": "landingpage-rp-consultoria",
+  "version": "1.0.0",
+  "description": "Landing page da RP Consultoria | HS Consórcios — captação de clientes para consórcio de imóveis e veículos.",
+  "private": true,
+  "scripts": {
+    "dev": "npx --yes serve . -l 5500",
+    "start": "npx --yes serve . -l 5500"
+  },
+  "keywords": [
+    "landing-page",
+    "consorcio",
+    "imoveis",
+    "veiculos",
+    "rp-consultoria",
+    "hs-consorcios"
+  ],
+  "author": "RP Consultoria | HS Consórcios",
+  "license": "UNLICENSED"
+}
