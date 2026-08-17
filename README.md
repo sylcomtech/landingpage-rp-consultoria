@@ -46,7 +46,8 @@ Busque por `placeholder` no `index.html` e ajuste:
 - **Telefone, e-mail e endereço** na seção de Contato (`#contato`).
 - **Links de redes sociais** (Instagram, Facebook, LinkedIn) na seção de Contato.
 - **Valores da tabela de Cartas Contempladas** (`#contempladas`) — atualmente ilustrativos.
-- **Foto do especialista** (`#contempladas`, `.photo-frame`): substitua a `<div class="photo-frame">` por uma tag `<img>` apontando para uma imagem em `assets/img/` (ex: `assets/img/consultor.jpg`), mantendo a classe `photo-frame` para herdar o arredondamento e o tamanho, ou ajuste o CSS conforme a imagem.
+
+A foto do especialista já está em `assets/img/rapha-especialista.png` (fundo removido, PNG com transparência) e é exibida em `#contempladas .photo-frame`. Para trocar por outra: gere um PNG com fundo transparente e substitua o arquivo (ou aponte o `src` do `<img>` para o novo caminho).
 
 ## 🔌 Como os formulários funcionam
 
