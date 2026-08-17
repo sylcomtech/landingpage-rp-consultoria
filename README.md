@@ -47,7 +47,7 @@ Busque por `placeholder` no `index.html` e ajuste:
 - **Links de redes sociais** (Instagram, Facebook, LinkedIn) na seção de Contato.
 - **Valores da tabela de Cartas Contempladas** (`#contempladas`) — atualmente ilustrativos.
 
-A foto do especialista já está em `assets/img/rapha-especialista.png` (fundo removido, PNG com transparência) e é exibida em `#contempladas .photo-frame`. Para trocar por outra: gere um PNG com fundo transparente e substitua o arquivo (ou aponte o `src` do `<img>` para o novo caminho).
+A foto do especialista está em `assets/img/Rapha.jpeg` e é exibida em `#contempladas .photo-frame` (com o fundo original da foto). Para trocar por outra: substitua o arquivo ou aponte o `src` do `<img>` para o novo caminho. Uma versão com fundo removido também está disponível em `assets/img/rapha-especialista.png`, caso queira usá-la no futuro.
 
 ## 🔌 Como os formulários funcionam
 

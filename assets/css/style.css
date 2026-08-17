@@ -802,18 +802,9 @@ h4 {
 .photo-frame {
   aspect-ratio: 3 / 4;
   border-radius: var(--radius-lg);
-  background: linear-gradient(160deg, #1a1a1d 0%, #3a0a0f 100%);
   overflow: hidden;
   position: relative;
   box-shadow: var(--shadow-md);
-}
-
-.photo-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(216, 19, 36, 0.35), transparent 55%);
-  pointer-events: none;
 }
 
 .photo-frame img {
