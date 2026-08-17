@@ -31,9 +31,10 @@ LandingPageRP/
 4. **Por que escolher o Consórcio** — Poder é seu / Economia sem juros / Investimento planejado
 5. **Como funciona** — 4 passos + caixa de dica + CTA "Quero simular"
 6. **Qual será sua próxima conquista?** — cards Imóvel / Veículo / Investimento, cada um com botão "Simule agora"
-7. **Quem somos e diferencial** — missão + 4 diferenciais
-8. **Regulamentado pelo Banco Central e ABAC**
-9. **Contato** — WhatsApp/telefone, e-mail, endereço, redes sociais e formulário
+7. **Cartas contempladas** — tabela compacta (crédito, parcelas pagas, parcela) com botão "Tenho interesse" por linha, ao lado de um espaço para foto do especialista e selos de confiança
+8. **Quem somos e diferencial** — missão + 4 diferenciais
+9. **Regulamentado pelo Banco Central e ABAC**
+10. **Contato** — WhatsApp/telefone, e-mail, endereço, redes sociais e formulário
 
 Todos os botões de simulação abrem o **mesmo modal** de captação, já pré-preenchendo o tipo de produto de acordo com o botão clicado.
 
@@ -44,6 +45,8 @@ Busque por `placeholder` no `index.html` e ajuste:
 - **Número de WhatsApp**: em `assets/js/main.js`, constante `WHATSAPP_NUMBER` (topo do arquivo) e no link do botão flutuante em `index.html` (`.whatsapp-fab`).
 - **Telefone, e-mail e endereço** na seção de Contato (`#contato`).
 - **Links de redes sociais** (Instagram, Facebook, LinkedIn) na seção de Contato.
+- **Valores da tabela de Cartas Contempladas** (`#contempladas`) — atualmente ilustrativos.
+- **Foto do especialista** (`#contempladas`, `.photo-frame`): substitua a `<div class="photo-frame">` por uma tag `<img>` apontando para uma imagem em `assets/img/` (ex: `assets/img/consultor.jpg`), mantendo a classe `photo-frame` para herdar o arredondamento e o tamanho, ou ajuste o CSS conforme a imagem.
 
 ## 🔌 Como os formulários funcionam
 
