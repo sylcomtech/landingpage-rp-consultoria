@@ -16,10 +16,8 @@ LandingPageRP/
 │   │   └── style.css       # Estilos (tokens, layout, responsivo)
 │   ├── js/
 │   │   └── main.js         # Menu mobile, modal, formulários, scroll reveal
-│   ├── img/
-│   │   └── favicon.svg     # Ícone da aba do navegador
-│   └── video/
-│       └── apresentacao.mp4 # Vídeo de apresentação exibido no hero
+│   └── img/
+│       └── favicon.svg     # Ícone da aba do navegador
 ├── package.json            # Scripts opcionais para rodar localmente
 ├── .gitignore
 └── README.md
@@ -28,7 +26,7 @@ LandingPageRP/
 ## 📑 Seções da página
 
 1. **Header/Navbar** — logo "RP Consultoria | HS Consórcios" + menu + CTA
-2. **Hero + Formulário de simulação** — headline principal, vídeo de apresentação (`.hero__video`) e formulário de captação
+2. **Hero + Formulário de simulação** — headline principal e formulário de captação
 3. **Prova social (números)** — maior administradora, bens entregues, contemplações
 4. **Por que escolher o Consórcio** — Poder é seu / Economia sem juros / Investimento planejado
 5. **Como funciona** — 4 passos + caixa de dica + CTA "Quero simular"
