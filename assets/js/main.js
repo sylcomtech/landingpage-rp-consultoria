@@ -222,4 +222,37 @@
       el.classList.add("is-visible");
     });
   }
+
+  /* ---------------------------------------------------------
+     Vídeo de fundo do hero: garante que fique sempre rodando,
+     mesmo se o autoplay inicial for bloqueado pelo navegador.
+  --------------------------------------------------------- */
+  var heroVideo = qs(".hero__video video");
+  if (heroVideo) {
+    var tryPlay = function () {
+      var playPromise = heroVideo.play();
+      if (playPromise && typeof playPromise.catch === "function") {
+        playPromise.catch(function () {
+          // Autoplay bloqueado: retoma assim que houver qualquer interação do usuário.
+          var resume = function () {
+            heroVideo.play();
+            document.removeEventListener("click", resume);
+            document.removeEventListener("touchstart", resume);
+            document.removeEventListener("scroll", resume);
+          };
+          document.addEventListener("click", resume, { once: true });
+          document.addEventListener("touchstart", resume, { once: true });
+          document.addEventListener("scroll", resume, { once: true, passive: true });
+        });
+      }
+    };
+
+    tryPlay();
+
+    document.addEventListener("visibilitychange", function () {
+      if (!document.hidden && heroVideo.paused) {
+        tryPlay();
+      }
+    });
+  }
 })();
