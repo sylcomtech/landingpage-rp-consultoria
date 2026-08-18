@@ -210,10 +210,15 @@ h4 {
   gap: 24px;
 }
 
+.header__inner > * {
+  min-width: 0;
+}
+
 .brand {
   display: flex;
   align-items: center;
   gap: 12px;
+  min-width: 0;
 }
 
 .brand__mark {
@@ -234,7 +239,10 @@ h4 {
 .brand__names {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  row-gap: 2px;
   gap: 8px;
+  min-width: 0;
   color: var(--color-white);
   font-family: var(--font-heading);
   line-height: 1.1;
@@ -324,6 +332,10 @@ h4 {
   grid-template-columns: 1.1fr 0.9fr;
   gap: 56px;
   align-items: start;
+}
+
+.hero__inner > * {
+  min-width: 0;
 }
 
 .eyebrow {
@@ -718,6 +730,13 @@ h4 {
   align-items: start;
 }
 
+/* Itens de grid não encolhem abaixo do conteúdo (ex: tabela) por padrão;
+   sem isso a tabela força rolagem horizontal na página inteira no mobile. */
+.contempladas__table-col,
+.contempladas__photo-col {
+  min-width: 0;
+}
+
 .table-wrap {
   background: var(--color-white);
   border-radius: var(--radius-md);
@@ -849,6 +868,10 @@ h4 {
   align-items: start;
 }
 
+.about > * {
+  min-width: 0;
+}
+
 .about__lead {
   font-size: 1.05rem;
   color: var(--color-gray-700);
@@ -906,6 +929,10 @@ h4 {
   align-items: center;
 }
 
+.compliance > * {
+  min-width: 0;
+}
+
 .compliance__badges {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -937,6 +964,10 @@ h4 {
   grid-template-columns: 1fr 1fr;
   gap: 56px;
   align-items: start;
+}
+
+.contact > * {
+  min-width: 0;
 }
 
 .contact__list {
@@ -1187,7 +1218,7 @@ h4 {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .nav {
     position: fixed;
     top: var(--header-h);
@@ -1272,6 +1303,7 @@ h4 {
   .cartas-table td {
     display: block;
     width: 100%;
+    min-width: 0;
   }
 
   .cartas-table tr {
