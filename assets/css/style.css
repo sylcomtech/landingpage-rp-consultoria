@@ -394,6 +394,22 @@ h4 {
   color: var(--color-red-light);
 }
 
+.hero__video {
+  max-width: 420px;
+  margin-top: 34px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero__video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--color-black);
+}
+
 /* ---------- Formulário de simulação (card) ---------- */
 .hero__form-wrap {
   position: relative;
